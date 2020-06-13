@@ -1,0 +1,16 @@
+﻿@model int
+@{
+  ViewData["Title"] = "Home";
+
+  var goingIsPlural = Model != 1;
+  var goingVerb = goingIsPlural ? "are" : "is";
+  var goingQuantifier = goingIsPlural ? "people" : "person";
+  var goingText = $"{Model} {goingQuantifier} {goingVerb} going!";
+}
+
+<div class="text-center">
+  <h2> We're going to have an exciting party!</h2>
+  <h3>@goingText</h3>
+  <h4>And YOU are invited!</h3>
+  <a class="btn btn-primary" asp-action="RsvpForm">RSVP Now</a>
+</div>
