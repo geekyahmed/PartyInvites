@@ -6,7 +6,7 @@ namespace PartyInvites.Controllers
 {
   public class HomeController : Controller
   {
-    public IActionResult Index()
+    public ViewResult Index()
     {
       return View(Repository.Going.Count());
     }
