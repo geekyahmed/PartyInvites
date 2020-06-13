@@ -11,4 +11,4 @@ If you have Docker installed, you can run the app straightaway using:
   docker run -p 8080:80 devhammed/partyinvites
 ```
 
-Or clone the clone the repository and use your local `dotnet` installation to run it.
+Or clone the repository and use your local `dotnet` installation to run it.
